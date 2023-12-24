@@ -86,8 +86,9 @@ header .buttonBox .btn.noBorder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('./images/BG.png');
+    background: url('./images/BG.png') no-repeat;
     object-fit: cover;
+    background-size: cover;
 }
 
 .home .img-box-bg {
@@ -393,7 +394,25 @@ footer {
 
 footer .imgBG {
     position: absolute;
+    height: 164px;
     left: 0;
     top: calc(100% - 164px);
     width: 100%;
+}
+
+@media (max-width: 1500px) {
+    .join {
+        gap: 25px;
+    }
+    .join .text-box form {
+        width: 575px;
+    }
+    header {
+        width: 90%;
+    }
+    .party,
+    .event {
+        gap: 55px;
+        padding: 80px 5vw;
+    }
 }
